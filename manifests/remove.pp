@@ -1,9 +1,9 @@
 class collectd::remove {
-  $required = $operatingsystem ? {
+  $required = $::operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|scientific)/ => 'collectd',
   }
 
-  $service = $operatingsystem ? {
+  $service = $::operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|scientific)/ => 'collectd',
   }
 
